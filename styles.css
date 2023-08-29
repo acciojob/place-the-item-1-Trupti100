@@ -1,2 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
 
-/* Your CSS Code here. */
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.item {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  flex: 0 0 calc(20% - 10px);
+  text-align: center;
+}
+
+.item:first-child {
+  margin-left: 0;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.item:nth-child(odd) {
+  background-color: #e74c3c;
+}
